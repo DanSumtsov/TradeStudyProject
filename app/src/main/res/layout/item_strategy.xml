@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect_snow">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/strategy"
+            android:textColor="@color/dark_blue"
+            android:textSize="17sp"
+            android:theme="@style/Tv_Sans_S"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="10.10.2022"
+            android:textColor="#80606B7B"
+            android:textSize="12sp"
+            android:theme="@style/Tv_Sans_S"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_marginTop="8dp"
+            android:background="#331083F8"
+            app:layout_constraintEnd_toEndOf="@+id/tv_date"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <ImageView
+            android:id="@+id/iv_save2"
+            android:layout_width="32dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:srcCompat="@drawable/ic_currency" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_currency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/iv_save2"
+            app:layout_constraintTop_toTopOf="@+id/iv_save2"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_chip" />
+
+        <ImageView
+            android:id="@+id/iv_save3"
+            android:layout_width="32dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/rv_currency"
+            app:srcCompat="@drawable/ic_time" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_timeframe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/iv_save2"
+            app:layout_constraintTop_toTopOf="@+id/iv_save3"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_chip" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

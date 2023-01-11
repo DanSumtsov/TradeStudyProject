@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect_snow">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="@string/tips"
+            android:textColor="@color/dark_blue"
+            android:textSize="17sp"
+            android:theme="@style/Tv_Sans_S"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="4"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend ultricies erat nec consequat. Suspendisse potenti. Donec nisl lorem, porta at libero sit amet, ullamcorper volutpat purus. Praesent sagittis ultrices luctus. Vestibulum sit amet velit ut arcu pellentesque gravida non id nulla. Curabitur id eros at nunc consectetur tempus id elementum elit. Ut molestie pellentesque tristique. Vivamus vitae convallis ex. Ut id felis et sapien mollis bibendum. Fusce varius ultrices pretium. Pellentesque scelerisque tristique metus vitae imperdiet. Sed efficitur pellentesque felis, at tincidunt eros eleifend nec. In porta nunc ut diam elementum efficitur. Proin rutrum pretium tellus at egestas. Vestibulum gravida imperdiet mauris, vitae gravida urna posuere vel."
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:theme="@style/Tv_Sans_R"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

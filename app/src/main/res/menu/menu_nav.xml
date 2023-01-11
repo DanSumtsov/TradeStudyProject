@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/strategy"
+        android:icon="@drawable/ic_strategy"
+        android:title="@string/strategy"/>
+
+    <item android:id="@+id/tips"
+        android:icon="@drawable/ic_tips"
+        android:title="@string/tips"/>
+
+    <item android:id="@+id/vocabulary"
+        android:icon="@drawable/ic_vocabulary"
+        android:title="@string/vocabulary"/>
+
+</menu>
